@@ -1,0 +1,33 @@
+/* Content section */
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+/* Media query for smaller screens (phones) */
+@media screen and (max-width: 768px) {
+  /* Adjust content positioning for smaller screens */
+  .content {
+    position: static;
+    top: auto;
+    left: auto;
+    text-align: center; /* Center content */
+    padding-top: 100px; /* Add space above content */
+  }
+  
+  /* Adjust title width */
+  .content .title {
+    width: 100%; /* Full width */
+  }
+
+  /* Adjust paragraph width */
+  .content p {
+    width: 90%; /* 90% width */
+    margin: 0 auto; /* Center horizontally */
+  }
+
+  /* Move photo down */
+  .hero {
+    background-position: center bottom; /* Move background image to bottom center */
+  }
+}
